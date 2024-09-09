@@ -1,0 +1,43 @@
+/*========================================CHUNG=====================================*/
+nav ul li a {
+    text-decoration: none;
+    color: #c9d2da;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #2e80ce;
+    border-radius: 999px;
+    color:#fff;
+    font-family:Sora;
+    font-size:18px;
+    line-height:60px;
+    text-align: center;
+}
+
+
+/*========================================HEADER=====================================*/
+header {
+    height: 100vh;
+    background-color: rgb(16, 55, 92);
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__nav ul li a {
+    padding: 8px 21px;
+}
