@@ -6,12 +6,12 @@ nav ul li a {
 
 button {
     border: none;
+    text-decoration: none;
 }
 
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
-    padding-top: 30px;
     margin: 0 auto;
 }
 
@@ -20,16 +20,18 @@ button {
     border-radius: 999px;
     color:#fff;
     font-family:Sora;
-    font-size:18px;
-    line-height:60px;
+    font-size:1.8rem;
+    line-height:6rem;
     text-align: center;
+    font-weight: 400;
+    min-width: 205px;
 }
 
-
-/*========================================HEADER=====================================*/
+/*========================================HEADER======================================*/
 header {
+    padding-top: 30px;
     height: 100vh;
-    background-color: rgb(16, 55, 92);
+    background-color: rgb(29, 55, 93);
 }
 
 header .header-top {
@@ -37,7 +39,42 @@ header .header-top {
     justify-content: space-around;
     align-items: center;
 }
-
+/* header .header-top .group-btn a{
+    text-decoration: none;
+    border: none;
+} */
 .header__nav ul li a {
     padding: 8px 21px;
+}
+.header__nav ul li a:hover{
+    font-weight: 600;
+    color: #fff;
+}
+.navbar__content-item--active{
+    color: #fff;
+}
+.navbar__content-item--active::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -3px;
+    right: 7px;
+    position: relative;
+}
+.header__btn--signup{
+    min-width: 144px;
+    line-height: 4.4rem;
+    /* font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75; */
+}
+.header__btn--login{
+    background-color: rgb(29, 55, 93);
+    padding: 8px 21px;
+    margin-right: 7px;
+    color: #c9d2da;
 }
