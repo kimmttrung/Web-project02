@@ -5,6 +5,7 @@ nav ul li a {
 }
 
 button {
+    cursor: pointer;
     border: none;
     text-decoration: none;
 }
@@ -17,6 +18,7 @@ button {
 
 .btn {
     background-color: #2e80ce;
+    display: inline-block;
     border-radius: 999px;
     color:#fff;
     font-family:Sora;
@@ -25,6 +27,7 @@ button {
     text-align: center;
     font-weight: 400;
     min-width: 205px;
+    text-decoration: none;
 }
 
 /*========================================HEADER======================================*/
@@ -77,4 +80,61 @@ header .header-top {
     padding: 8px 21px;
     margin-right: 7px;
     color: #c9d2da;
+}
+/*===========================================HERO======================================*/
+.header .hero{
+    margin-top: 76px;
+
+}
+.header .hero .container{
+    display: flex;
+    justify-content: space-between;;
+}
+
+.header .hero .hero__content{
+    width: 44%;
+}
+
+.hero__heading--title{
+    color: #fff;
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+.hero__desc{
+    margin-top: 22px;
+    color: #c9d2da;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    margin-bottom: 38px;
+}
+
+.hero__phone{
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    margin-left: 38px;
+}
+.header .hero .hero__images{
+    flex: 1;
+    margin-left: 121px;
+    display: flex;
+}
+.hero__image--large{
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    margin-right: -6px;
+    z-index: 1;
+}
+.hero__image--small{
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+    margin-top: 65px;
 }
