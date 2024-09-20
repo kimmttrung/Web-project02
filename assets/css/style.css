@@ -20,14 +20,30 @@ button {
     background-color: #2e80ce;
     display: inline-block;
     border-radius: 999px;
-    color:#fff;
-    font-family:Sora;
-    font-size:1.8rem;
-    line-height:6rem;
+    color: #fff;
+    font-family: Sora;
+    font-size: 1.8rem;
+    line-height: 6rem;
     text-align: center;
     font-weight: 400;
     min-width: 205px;
     text-decoration: none;
+}
+
+.heading--title {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
 }
 
 /*========================================HEADER======================================*/
@@ -42,6 +58,7 @@ header .header-top {
     justify-content: space-around;
     align-items: center;
 }
+
 /* header .header-top .group-btn a{
     text-decoration: none;
     border: none;
@@ -49,14 +66,17 @@ header .header-top {
 .header__nav ul li a {
     padding: 8px 21px;
 }
-.header__nav ul li a:hover{
+
+.header__nav ul li a:hover {
     font-weight: 600;
     color: #fff;
 }
-.navbar__content-item--active{
+
+.navbar__content-item--active {
     color: #fff;
 }
-.navbar__content-item--active::before{
+
+.navbar__content-item--active::before {
     content: "";
     display: inline-block;
     width: 6px;
@@ -67,7 +87,8 @@ header .header-top {
     right: 7px;
     position: relative;
 }
-.header__btn--signup{
+
+.header__btn--signup {
     min-width: 144px;
     line-height: 4.4rem;
     /* font-size: 1.6rem;
@@ -75,27 +96,31 @@ header .header-top {
     font-weight: 300;
     line-height: 1.75; */
 }
-.header__btn--login{
+
+.header__btn--login {
     background-color: rgb(29, 55, 93);
     padding: 8px 21px;
     margin-right: 7px;
     color: #c9d2da;
 }
+
 /*===========================================HERO======================================*/
-.header .hero{
+.header .hero {
     margin-top: 76px;
 
 }
-.header .hero .container{
+
+.header .hero .container {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
 }
 
-.header .hero .hero__content{
+.header .hero .hero__content {
     width: 44%;
 }
 
-.hero__heading--title{
+.hero__heading--title {
     color: #fff;
     font-size: 7rem;
     font-style: normal;
@@ -103,7 +128,8 @@ header .header-top {
     line-height: 1.14;
     letter-spacing: -1.4px;
 }
-.hero__desc{
+
+.hero__desc {
     margin-top: 22px;
     color: #c9d2da;
     font-family: Sora;
@@ -113,28 +139,109 @@ header .header-top {
     margin-bottom: 38px;
 }
 
-.hero__phone{
+.hero__phone {
     color: #fff;
     text-align: center;
     font-size: 1.8rem;
     line-height: 1.67;
     margin-left: 38px;
 }
-.header .hero .hero__images{
+
+.header .hero .hero__images {
     flex: 1;
     margin-left: 121px;
     display: flex;
 }
-.hero__image--large{
+
+.hero__image--large {
     width: 330px;
     height: 540px;
     object-fit: cover;
     margin-right: -6px;
     z-index: 1;
 }
-.hero__image--small{
+
+.hero__image--small {
     width: 210px;
     height: 410px;
     object-fit: cover;
     margin-top: 65px;
+}
+
+/*======================================SERVICES=====================================*/
+
+.services {
+    padding: 170px 0;
+}
+
+.services__heading {
+    text-align: center;
+}
+
+.services__row {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.services__desc {
+    width: 468px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services__image {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+}
+
+
+.services__icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    color: #05080a;
+    line-height: 16px;
+    margin: 0px 19px 0px 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.services__heading3 {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.services__desc {
+    margin-top: 8px;
+    width: 349px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    text-align: start;
+}
+
+.services__btn{
+    margin-top: 55px;
+}
+
+.services__item {
+    display: flex;
+    padding: 21px;
+}
+.services__item:hover{
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+.services__item:hover .services__icon{
+    background-color: #2e80ce;
+    color: #fff;
 }
